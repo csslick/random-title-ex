@@ -1,0 +1,111 @@
+/* style.css */
+:root {
+  /* 여기에 --변수 만듬 */
+  --main-color: #1abc9c;
+  --sub-color: #f1c40f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #ccc;
+  background-image: url(images/title-bg1.jpg);
+  background-size: cover;
+  /* 화면 높이값에 맞춰 채움 */
+  height: 100vh;
+  background-position: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  /* 최소 사이즈 지정 */
+  min-width: 1100px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#main-header {
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  height: 80px;
+}
+
+#gnb a {
+  color: #fff;
+}
+
+#main-header > h1 {
+  float: left;
+  margin-top: 16px;
+  margin-left: 30px;
+}
+
+#main-header #main_gnb {
+  float: right;
+  margin-right: 30px;
+} 
+
+#gnb > li{
+  display: inline-block;
+  margin-left: 3em;
+}
+
+#main_gnb {
+  /* outline: 1px solid red; */
+  margin-top: 28px;
+}
+
+#main_gnb #gnb {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#main_gnb .search-box {
+  display: inline-block;
+  margin-left: 4em;
+  vertical-align: middle;
+}
+
+#main_gnb .search-box .search {
+  padding: 5px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+#main_gnb .search-box button {
+  padding: 5px 10px;
+  background: var(--main-color);
+  color: #fff;
+  border-style: none;
+}
+
+/* 타이틀 */
+.title {
+  font-size: 44px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* 변형속성: 이동(위치조정) */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0 0 8px #000;
+}
+
+#time {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+
+/* 메뉴가 hover시 메인컬러 텍스트 색 반영(var함수활용) */

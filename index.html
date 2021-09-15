@@ -5,8 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>랜덤 배경 타이틀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 도전과제: 실습을 다 따라해본 후 주제나 구성을 바꾸던지 해서 자신만의 홈페이지를 만들어 보세요. -->
+  <header id="main-header">
+    <h1 class="brand">Travel</h1>
+    <nav id="main_gnb">
+      <ul id="gnb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">목적지</a></li>
+        <li><a href="#">여행종류</a></li>
+        <li><a href="#">회사소개</a></li>
+      </ul>
+      <div class="search-box">
+        <input class="search" type="text">
+        <button>검색</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="title">
+    <h2>Your journy starts here</h2>
+    <p>Where do you want to go?</p>
+    <div id="time">
+      <span id="year">0000</span>년
+      <span id="month">00</span>월
+      <span id="date">00</span>일
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
